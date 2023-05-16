@@ -4,7 +4,7 @@ ARMGNU?=arm-none-eabi
 COPS = -Wall  -Og -nostdlib -nostartfiles -ffreestanding -save-temps
 AOPS = --warn --fatal-warnings
 
-TARGET = atsame70q21
+TARGET = atsame70n19
 PROJECT = mecrisp-stellaris-$(TARGET)
 
 all : $(PROJECT).bin $(PROJECT).hex

@@ -21,6 +21,14 @@
 @ Just fill in these three hooks.
 @ Do compiletoram, set hooks, compiletoflash, set hooks in init.
 
+
+.equ FLASH_Base, 0x400E0C00
+.equ FLASH_FMR,  FLASH_Base + 0x00 @ EEFC Flash Mode Register
+.equ FLASH_FCR,  FLASH_Base + 0x04 @ EEFC Flash Command Register
+.equ FLASH_FSR,  FLASH_Base + 0x08 @ EEFC Flash Status Register
+.equ FLASH_FRR,  FLASH_Base + 0x0C @ EEFC Flash Result Register
+.equ FLASH_WPMR, FLASH_Base + 0xE4 @ Write Protection Mode Register
+
 @------------------------------------------------------------------------------
   Wortbirne Flag_visible|Flag_variable, "hook-initflash" @ ( -- addr )
   CoreVariable hook_initflash

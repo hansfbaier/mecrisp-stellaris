@@ -16,9 +16,9 @@
 @    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 @
 
-@ Terminal interface for same70q21 xplained via usart1 (CDC channel through usb connection)
-@ PB4 = TXD
-@ PA21= RXD
+@ Terminal interface for same70n19 xplained via usart1 (CDC channel through usb connection)
+@ PB0 = TXD
+@ PB1 = RXD
 
 
 @ Terminalroutinen
@@ -661,19 +661,19 @@ test:		ldr	r0,=USART1_THR
 		b	test
 		
 */
-		//set pc8 as output for the led and switch it on
-		ldr	r0,=PIOC_PER
-		mov	r1,#0x00000100
+		//set PA15 as output for the led and switch it on
+		ldr	r0,=PIOA_PER
+		mov	r1,#0x00008000
 		str	r1,[r0]
-		ldr	r0,=PIOC_OER
+		ldr	r0,=PIOA_OER
 		str	r1,[r0]
-		mov	r1,#0x00000100
-		ldr	r0,=PIOC_CODR		//turn led on
+		mov	r1,#0x00008000
+		ldr	r0,=PIOA_CODR		//turn led on
 		str	r1,[r0]
 
 
 
-	bx	lr  	
+	bx	lr
 
   .ltorg @ Hier werden viele spezielle Hardwarestellenkonstanten gebraucht, schreibe sie gleich !
 

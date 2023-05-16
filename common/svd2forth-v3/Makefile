@@ -1,8 +1,8 @@
 # svd2forth-v3 makefile for Mecrisp-Stellaris by Matthias Koch
 # By Terry Porter terry@tjporter.com.au
 
-PROJECT_NAME		= svd2forth-v3-stm32
-FOLDED_SVD		= STM32L07x.svd
+PROJECT_NAME		= svd2forth-v3-atsame70
+FOLDED_SVD		= ATSAME70N19.svd
 CLEANED_SVD		= $(FOLDED_SVD)-cleaned.svd
 UNFOLDED_SVD 		= $(CLEANED_SVD).uf.svd
 PROCESSOR 		= xsltproc
