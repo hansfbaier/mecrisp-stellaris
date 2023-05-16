@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+arm-none-eabi-as -o mecrisp-stellaris-linux.o mecrisp-stellaris-linux.s
+arm-none-eabi-ld -T mecrisp.ld -z max-page-size=4096 -o mecrisp-stellaris-linux.elf mecrisp-stellaris-linux.o
+arm-none-eabi-objcopy -O binary mecrisp-stellaris-linux.elf mecrisp-stellaris-linux
+rm -f mecrisp-stellaris-linux.o mecrisp-stellaris-linux.elf

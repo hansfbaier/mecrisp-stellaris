@@ -1,0 +1,407 @@
+#!/bin/bash
+
+cd aducm4050-ra
+make clean
+cd ..
+
+cd atsame70-ra
+make clean
+cd ..
+
+cd lpc1114fn28
+make clean
+cd ..
+
+cd lpc1114fn28-ra
+make clean
+cd ..
+
+cd lpc1114fbd48
+make clean
+cd ..
+
+cd lpc1114fbd48-ra
+make clean
+cd ..
+
+cd lpc1115fbd48
+make clean
+cd ..
+
+cd lpc1115fbd48-ra
+make clean
+cd ..
+
+cd lpc845m301
+make clean
+cd ..
+
+cd kl25z128
+make clean
+cd ..
+
+cd kl25z128-ra
+make clean
+cd ..
+
+cd kl46z256
+make clean
+cd ..
+
+cd kl46z256-ra
+make clean
+cd ..
+
+cd mk20dx256
+make clean
+cd ..
+
+cd mk64fn1m0
+make clean
+cd ..
+
+cd mk64fn1m0-ra
+make clean
+cd ..
+
+cd nrf51822
+make clean
+cd ..
+
+cd nrf52832
+make clean
+cd ..
+
+cd microbit
+make clean
+cd ..
+
+cd microbit-ra
+make clean
+cd ..
+
+cd msp432p401r
+make clean
+cd ..
+
+cd msp432p401r-ra
+make clean
+cd ..
+
+cd lm3s811-ra
+make clean
+cd ..
+
+cd lm4f120
+make clean
+cd ..
+
+cd lm4f120-ra
+make clean
+cd ..
+
+cd lm4f232
+make clean
+cd ..
+
+cd palanqin
+make clean
+cd ..
+
+cd palanqin-ra
+make clean
+cd ..
+
+cd tm4c1294
+make clean
+cd ..
+
+cd tm4c1294-ra
+make clean
+cd ..
+
+cd stm32f030f4
+make clean
+cd ..
+
+cd stm32f030k6
+make clean
+cd ..
+
+cd stm32f030k6-ra
+make clean
+cd ..
+
+cd stm32f030r8
+make clean
+cd ..
+
+cd stm32f030r8-ra
+make clean
+cd ..
+
+cd stm32f042f6
+make clean
+cd ..
+
+cd stm32f042f6-ra
+make clean
+cd ..
+
+cd stm32f051
+make clean
+cd ..
+
+cd stm32f051-ra
+make clean
+cd ..
+
+cd stm32f072rb
+make clean
+cd ..
+
+cd stm32f072rb-ra
+make clean
+cd ..
+
+cd stm32l031k6
+make clean
+cd ..
+
+cd stm32l053c8
+make clean
+cd ..
+
+cd stm32l053c8-ra
+make clean
+cd ..
+
+cd stm32l073rz
+make clean
+cd ..
+
+cd stm32l073rz-ra
+make clean
+cd ..
+
+cd stm32l082kz-ra
+make clean
+cd ..
+
+cd stm32l152
+make clean
+cd ..
+
+cd stm32l152rb
+make clean
+cd ..
+
+cd stm32l432-ra
+make clean
+cd ..
+
+cd stm32f100
+make clean
+cd ..
+
+cd stm32f103
+make clean
+cd ..
+
+cd stm32f103-ra
+make clean
+cd ..
+
+cd stm32f103rb
+make clean
+cd ..
+
+cd stm32f103rb-ra
+make clean
+cd ..
+
+cd stm32f207zg
+make clean
+cd ..
+
+cd stm32f207zg-ra
+make clean
+cd ..
+
+cd stm32f303
+make clean
+cd ..
+
+cd stm32f303-ra
+make clean
+cd ..
+
+cd stm32f303k8
+make clean
+cd ..
+
+cd stm32f303k8-ra
+make clean
+cd ..
+
+cd stm32f303re-ra
+make clean
+cd ..
+
+cd stm32f401
+make clean
+cd ..
+
+cd stm32f401-ra
+make clean
+cd ..
+
+cd stm32f401cc
+make clean
+cd ..
+
+cd stm32f401cc-ra
+make clean
+cd ..
+
+cd stm32f401cd-ra
+make clean
+cd ..
+
+cd stm32f407
+make clean
+cd ..
+
+cd stm32f407-ra
+make clean
+cd ..
+
+cd stm32f407diymore
+make clean
+cd ..
+
+cd stm32f407diymore-ra
+make clean
+cd ..
+
+cd stm32f411
+make clean
+cd ..
+
+cd stm32f411-ra
+make clean
+cd ..
+
+cd stm32f429
+make clean
+cd ..
+
+cd stm32l476
+make clean
+cd ..
+
+cd stm32l476-ra
+make clean
+cd ..
+
+cd stm32f746-ra
+make clean
+cd ..
+
+cd stm32f767-ra
+make clean
+cd ..
+
+cd stm32h743-ra
+make clean
+cd ..
+
+cd stm32g031f4
+make clean
+cd ..
+
+cd stm32g031f6-ra
+make clean
+cd ..
+
+cd stm32g031f8-ra
+make clean
+cd ..
+
+cd stm32g031j6-ra
+make clean
+cd ..
+
+cd stm32g071rb-ra
+make clean
+cd ..
+
+cd stm32g431kb-ra
+make clean
+cd ..
+
+cd stm32wb55
+make clean
+cd ..
+
+cd numworks-ra
+make clean
+cd ..
+
+cd xmc1100
+make clean
+cd ..
+
+cd xmc1100-ra
+make clean
+cd ..
+
+cd efm32gg990
+make clean
+cd ..
+
+cd efm32gg990-ra
+make clean
+cd ..
+
+cd efm32hg322
+make clean
+cd ..
+
+cd efm32hg322-ra
+make clean
+cd ..
+
+cd cy8c4245axi
+make clean
+cd ..
+
+cd cy8c5888
+make clean
+cd ..
+
+cd nuc123
+make clean
+cd ..
+
+cd nuc123-ra
+make clean
+cd ..
+
+cd rp2040-ra
+./tidyup
+cd ..
+
+cd linux
+rm -f mecrisp-stellaris-linux.o
+rm -f mecrisp-stellaris-linux
+cd ..
+
+cd linux-ra
+rm -f mecrisp-stellaris-linux.o
+rm -f mecrisp-stellaris-linux
+cd ..
+
+cd freebsd-ra
+rm -f *.o *.elf mecrisp-stellaris-freebsd mecrisp-stellaris-freebsd-armv6
+cd ..
