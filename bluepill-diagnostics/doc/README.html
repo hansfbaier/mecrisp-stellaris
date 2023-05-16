@@ -1,0 +1,1069 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.14: http://docutils.sourceforge.net/" />
+<title>readme.rst</title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 7952 2016-07-26 18:15:59Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+.subscript {
+  vertical-align: sub;
+  font-size: smaller }
+
+.superscript {
+  vertical-align: super;
+  font-size: smaller }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left, table.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right, table.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+.align-top    {
+  vertical-align: top }
+
+.align-middle {
+  vertical-align: middle }
+
+.align-bottom {
+  vertical-align: bottom }
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: grey; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+</head>
+<body>
+<div class="document">
+
+
+<p>; .. index:: bluepill diagnostics v1.6</p>
+<div class="section" id="bluepill-diagnostics-v1-6-readme">
+<span id="diags-1-6"></span><h1>Bluepill Diagnostics V1.6 README</h1>
+<pre class="literal-block">
+Project: id-swdcom
+Version: 1.631
+Created: Mon  8 Feb 2021 14:09:48 AEDT
+Author 2021 by t.j.porter &lt;terry&#64;tjporter.com.au&gt;
+Purpose: Determine if your BluePill board contains a genuine STM32F103C8 MCU, attempt to determine clone type if not.
+Intended Audience: Blue Pill owners
+MCU: STM32F103 and clones
+Board: BluePill
+Core: Mecrisp-Stellaris RA 2.5.5 for STM32F103 by Matthias Koch
+Clock: 72 MHz
+Core Options enabled: 1,2,3,4,5,6,7
+Required: USB cable, serial terminal emulator, works on any OS. The USB virtual serial (any baudrate) will start in the Bluepill diagnostics menu.
+Web Sites Consulted: https://www.blaatschaap.be/32f103-comparison-part-3/ My thanks to Andre for his work with the Jdec data.
+For the latest project updates see: https://mecrisp-stellaris-folkdoc.sourceforge.io/bluepill-diagnostics-v1.6.html
+License: MIT, please see COPYING
+</pre>
+<hr class="docutils" />
+<div class="section" id="history">
+<h2>HISTORY</h2>
+<p>My Blue Pill Diagnostics project grew from an interest to create a self contained binary that would boot on a Blue Pill board and access internal MCU information to determine if it contained a genuine or counterfeit Microprocessor chip.</p>
+<p>V1.0 was released in November 2019 and it has taken two years to collate and study user clone/fake information because not a lot is known about these counterfeits which are usually (mis)labelled as genuine STMicrolectronics chips.</p>
+<p>This interest was kindled by various articles from Blue Pill owners in the popular EEVblog forum, <a class="reference external" href="https://www.eevblog.com/forum/index.php">https://www.eevblog.com/forum/index.php</a></p>
+<p>I now consider this project complete, 14 April 2021 at version V1.631 excepting bugfixes.</p>
+<p>My thanks to all those that supplied MCU dumps from my earlier versions and to Matthias Koch the Assembly Wizard who created the Free Mecrisp-Stellaris Forth which made not only made this project possible but fun.</p>
+<p>Forth is <strong>interactive</strong> and allows me to examine/change memory in real time and observe the effects instantly as there is no edit, compile, flash, test, edit cycle such as you have with the C programming language. Because Mecrisp-Stellaris Forth is only 20KB in size, it easily fits in the 64KB flash advertised by the Cortex-M3 STM32F103C8 MCU, unlike Circuit Python or eLua, the only other Cortex_M interactive languages, both of which which require 256KB (or more) flash just for their core.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Blue Pill Diagnostics V1.631 is also a self contained Forth Programming development environment with many tools such as peripheral register real time printing and dissasembler, it even has a PC-13 Blinky. Please see the end of this article for more information.</p>
+</div>
+<div class="section" id="changelog-from-v1-5">
+<h3>Changelog from V1.5</h3>
+<p>V1.631 is a major change as I've realised that attempting to collect and analyse the <em>Device electronic signature</em> is pointless as the same codes are used by genuine and clone mcu's alike. Thank you to those that emailed me their XML ID dump.</p>
+<p>V1.631 uses four tests below to determine if a MCU is a genuine STM32F103C8.</p>
+<ol class="arabic simple">
+<li>Exploit a silicon bug in genuine STM32F1xx chips where the BGMCU_IDCODE cannot be read from within the MCU without a SWD or JTAG interface connected.</li>
+<li>Verify the Flash Size Register = 64KB</li>
+<li>Verify that the MCU has a hidden second 64KB flash block as most STM32F103C8 chips do.</li>
+<li>Verify that the MCU Jdec manufacturer id is that of STMicroelectronics.</li>
+</ol>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Even if the MCU is not a genuine STM32F103C8 doesn't mean your Bluepill board is no good, it may still work perfectly although there does not seem to be any detailed English techical documentation for them. If the clone is fraduently marked as a genuine STM32F103C8 you may have some recourse against the seller, but I'm not a lawyer, and this is not legal advice.</p>
+</div>
+</div>
+</div>
+<div class="section" id="how-to-use-bluepill-diagnostics-v1-631">
+<h2>How to use Bluepill Diagnostics V1.631</h2>
+<ol class="arabic simple">
+<li>Download <a class="reference external" href="https://sourceforge.net/projects/mecrisp-stellaris-folkdoc/files/bluepill-diagnostics-v1.6.zip">https://sourceforge.net/projects/mecrisp-stellaris-folkdoc/files/bluepill-diagnostics-v1.6.zip</a></li>
+<li>Flash the bluepill-diagnostics-v1.6xx inside the above zipfile to your Bluepill/Maple Board with OpenOCD or whatever you normally use. Basically you flash this binary exactly as you would flash any STM32Fxx binary.</li>
+<li>Plug in a USB cable to the “Blue Pill” board and run a serial terminal program on your PC. This will also power the board.</li>
+<li>Connect the serial terminal program to the &quot;Mecrisp STM32F10x Forth Serial Port&quot; USB device now created on your PC. Any speed is ok, I use 460800 Baud myself.</li>
+<li>Press the &quot;m&quot; key on your keyboard to bring up the bluepill-diagnostics user menu.</li>
+</ol>
+</div>
+<div class="section" id="unknown-clones-fakes">
+<h2>Unknown clones/fakes</h2>
+<p>If your test MCU FAILS the 'a - Authenticity test' menu, please email your details to me at <a class="reference external" href="mailto:terry&#64;tjporter.com">terry&#64;tjporter.com</a> so I can work out what the MCU is and  add a test for it to the next release.</p>
+</div>
+<div class="section" id="new-menus">
+<h2>New Menus</h2>
+<div class="section" id="main-menu">
+<h3>Main Menu</h3>
+<img alt="bluepill/diags-v1.6/main-menu.jpg" src="bluepill/diags-v1.6/main-menu.jpg" />
+</div>
+<div class="section" id="h-testing-flash">
+<h3>h - testing flash</h3>
+<p>Note: Codes are written to each flash location and are read after writing to ensure every bit is tested.</p>
+<img alt="bluepill/diags-v1.6/testing-flash.jpg" src="bluepill/diags-v1.6/testing-flash.jpg" />
+</div>
+<div class="section" id="f-how-much-flash-is-declared-in-the-flash-size-register">
+<h3>f - how much Flash is declared in the Flash Size Register ?</h3>
+<img alt="bluepill/diags-v1.6/flash-declared.jpg" src="bluepill/diags-v1.6/flash-declared.jpg" />
+</div>
+<div class="section" id="d-print-dbgmcu-idcode">
+<h3>d - Print DBGMCU_IDCODE</h3>
+<img alt="bluepill/diags-v1.6/dbgmcu.jpg" src="bluepill/diags-v1.6/dbgmcu.jpg" />
+</div>
+<div class="section" id="a-authenticity-test-don-t-use-with-swd-jtag-requires-test-h-once-to-complete">
+<h3>a - Authenticity test, don't use with SWD/JTAG. Requires test h once to complete</h3>
+</div>
+<div class="section" id="passed-genuine-stm32f103c8t6">
+<h3>Passed - genuine STM32F103C8T6</h3>
+<img alt="bluepill/diags-v1.6/auth-passed.jpg" src="bluepill/diags-v1.6/auth-passed.jpg" />
+</div>
+<div class="section" id="failed-cks-clone">
+<h3>Failed - CKS clone</h3>
+<img alt="bluepill/diags-v1.6/windows-auth-fail.jpg" src="bluepill/diags-v1.6/windows-auth-fail.jpg" />
+</div>
+<div class="section" id="j-jdec-manufacturer-id">
+<h3>j - Jdec manufacturer id</h3>
+</div>
+<div class="section" id="genuine-stm32f103c8">
+<h3>Genuine STM32F103C8</h3>
+<img alt="bluepill/diags-v1.6/jdec-mfr-id.jpg" src="bluepill/diags-v1.6/jdec-mfr-id.jpg" />
+</div>
+<div class="section" id="cks-apm-clone">
+<h3>CKS/APM Clone</h3>
+<img alt="bluepill/diags-v1.6/windows-clone-jdec-codes.jpg" src="bluepill/diags-v1.6/windows-clone-jdec-codes.jpg" />
+</div>
+<div class="section" id="extra-menu">
+<h3>Extra Menu</h3>
+<img alt="bluepill/diags-v1.6/extra-menu.jpg" src="bluepill/diags-v1.6/extra-menu.jpg" />
+</div>
+<div class="section" id="i-unique-device-id-register">
+<h3>i - unique device Id register</h3>
+<img alt="bluepill/diags-v1.6/unique-dev-id.jpg" src="bluepill/diags-v1.6/unique-dev-id.jpg" />
+</div>
+<div class="section" id="n-unique-derived-serial-number">
+<h3>n - unique derived serial Number</h3>
+<img alt="bluepill/diags-v1.6/unique-serial-number.jpg" src="bluepill/diags-v1.6/unique-serial-number.jpg" />
+</div>
+</div>
+<div class="section" id="dbgmcu-idcode">
+<h2>DBGMCU_IDCODE</h2>
+<p>The DBGMCU_IDCODE, CPU-ID and RevID values in this table may help you determine the actual MCU in your Blue Pill. If St-link or OpenOCD don't work, try using the serial bootloader or even DFU via the Blue Pill USB connector to flash my V 1.6 Diags binary to your MCU.</p>
+<ul class="simple">
+<li>DBGMCU_IDCODE is at 0xE0042000</li>
+<li>Bits 11:0 DEV_ID: Device identifier</li>
+<li>Bits 15:12 Reserved</li>
+<li>Bits 31:16 REV_ID: Revision identifier</li>
+</ul>
+<pre class="literal-block">
+|3|3|2|2|2|2|2|2|2|2|2|2|1|1|1|1|1|1|1|1|1|1|
+|1|0|9|8|7|6|5|4|3|2|1|0|9|8|7|6|5|4|3|2|1|0|9|8|7|6|5|4|3|2|1|0|
+|-----------REV_ID--------------|rsrvd|---------DEV_ID----------|
+</pre>
+</div>
+<div class="section" id="table-device-info">
+<h2>Table: Device Info</h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="15%" />
+<col width="12%" />
+<col width="12%" />
+<col width="12%" />
+<col width="15%" />
+<col width="12%" />
+<col width="17%" />
+<col width="4%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Device</th>
+<th class="head">DEV-ID</th>
+<th class="head">RevID</th>
+<th class="head">Flash (KB)</th>
+<th class="head">2nd 64KB Hidden ?</th>
+<th class="head">Ram (KB)</th>
+<th class="head">Manufacturer</th>
+<th class="head">Note</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>STM32F103C8T6</td>
+<td>0x410</td>
+<td>0x2003</td>
+<td>2x 64</td>
+<td>YES</td>
+<td>20</td>
+<td>STMicroelectronics</td>
+<td>Y</td>
+</tr>
+<tr><td>STM32F103RBT6</td>
+<td>0x410</td>
+<td>0x2003</td>
+<td>128</td>
+<td>NO</td>
+<td>20</td>
+<td>STMicroelectronics</td>
+<td>Y</td>
+</tr>
+<tr><td>CKS32F103C8T6</td>
+<td>0x410</td>
+<td>0x2003</td>
+<td>64</td>
+<td>n/a</td>
+<td>20</td>
+<td>China Key System</td>
+<td>N</td>
+</tr>
+<tr><td>CKS32F103CBT6</td>
+<td>0x410</td>
+<td>0x2003</td>
+<td>128</td>
+<td>NO</td>
+<td>20</td>
+<td>China Key System</td>
+<td>N</td>
+</tr>
+<tr><td>APM32F103CBT6</td>
+<td>0x410</td>
+<td>0x2003</td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+<td>Apex Micro</td>
+<td>N</td>
+</tr>
+<tr><td>GD32F130C8</td>
+<td>0x410</td>
+<td>0x1303</td>
+<td>64</td>
+<td>n/a</td>
+<td>8</td>
+<td>Gigadevice</td>
+<td>?</td>
+</tr>
+<tr><td>GD32F150C8</td>
+<td>0x410</td>
+<td>0x1303</td>
+<td>64</td>
+<td>n/a</td>
+<td>8</td>
+<td>Gigadevice</td>
+<td>?</td>
+</tr>
+<tr><td>STM32F103VET6</td>
+<td>0x414</td>
+<td>0x1001</td>
+<td>512</td>
+<td>n/a 512kb</td>
+<td>64</td>
+<td>STMicroelectronics</td>
+<td>Y</td>
+</tr>
+<tr><td>GD32F103VE</td>
+<td>0x414</td>
+<td>0x1309</td>
+<td>512</td>
+<td>n/a 512kb</td>
+<td>64</td>
+<td>Gigadevice</td>
+<td>?</td>
+</tr>
+<tr><td>GD32F103VK</td>
+<td>0x430</td>
+<td>0x1309</td>
+<td>3072</td>
+<td>n/a 3MB</td>
+<td>96</td>
+<td>Gigadevice</td>
+<td>?</td>
+</tr>
+<tr><td>GD32F103C8T6</td>
+<td>0x436 ?</td>
+<td>0x1038 ?</td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+<td>Gigadevice</td>
+<td>?</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>Does this MCU require an active SWD connection before the DBGMCU_IDCODE can be read INTERNALLY (Using my Diagnostics Binary) ?</li>
+</ul>
+</div>
+</div>
+<div class="section" id="table-jdec-codes">
+<h2>Table: JDEC Codes</h2>
+<p>Note only STMicro and CS32 are verified, the rest pinched from Andre's site. Please email your labelled MCU confirmations/results for any MCU's to <a class="reference external" href="mailto:terry&#64;tjporter.com.au">terry&#64;tjporter.com.au</a> so I can keep this table updated if clones change id.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="45%" />
+<col width="17%" />
+<col width="17%" />
+<col width="21%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Manufacturer</th>
+<th class="head">Chip Example</th>
+<th class="head">identity (hex)</th>
+<th class="head">continuation (hex)</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>STMicro</td>
+<td>STM32F103C8</td>
+<td>20</td>
+<td>00</td>
+</tr>
+<tr><td>GigaDevice Semiconductor</td>
+<td>GD32F103C8</td>
+<td>C8</td>
+<td>07</td>
+</tr>
+<tr><td>GigaDevice Semiconductor (Beijing)</td>
+<td>GD32F103C8</td>
+<td>51</td>
+<td>07</td>
+</tr>
+<tr><td>HK32</td>
+<td>HK32F103CBT6</td>
+<td>55</td>
+<td>05</td>
+</tr>
+<tr><td>CS32</td>
+<td>CS32F103C8T6</td>
+<td>3B</td>
+<td>04</td>
+</tr>
+<tr><td>APM32</td>
+<td>APM32F103C8T6</td>
+<td>3B</td>
+<td>04</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="forth-user-notes">
+<h2>Forth User Notes</h2>
+<p>This project is built on Mecrisp-Stellaris Forth and is a complete Forth development environment. The command line may be accessed by quitting the Diagnostics Menu or by attaching a jumper between PA-0 and 3.3V, which at power up will switch the User Terminal into SWDCOM FORTH mode without starting the Bluepill Diagnostics Menu.</p>
+<p>Swdcom: <a class="reference external" href="https://mecrisp-stellaris-folkdoc.sourceforge.io/swdcom.html">https://mecrisp-stellaris-folkdoc.sourceforge.io/swdcom.html</a></p>
+<p>Numerous utilities are available while still keeping the binary size under 64KB so it can be flashed using unmodified st-link or openocd etc.</p>
+<p>More information about Mecrisp-Stellaris Forth may be found here: <a class="reference external" href="https://mecrisp-stellaris-folkdoc.sourceforge.io/index.html">https://mecrisp-stellaris-folkdoc.sourceforge.io/index.html</a></p>
+</div>
+<div class="section" id="kb-flash">
+<h2>128KB Flash</h2>
+<p>If your MCU passed all the tests can the full 128KB flash be used ?</p>
+<p>YES! but you need to use OpenOCD with a special config file 'stm32f103c8-128kb.cfg' which is included in the openocd subdirectory this release. This tells OpenOCD that the chip has 128KB flash.</p>
+</div>
+<div class="section" id="kernel-options">
+<h2>Kernel Options</h2>
+<p>This kernel has the following options enabled: 1,2,3,4,5,7,8</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="13%" />
+<col width="87%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Kernel Options</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>1</td>
+<td>context sensitive color prompt</td>
+</tr>
+<tr><td>2</td>
+<td>all errors in red and beep terminal bell. Enter &quot;;&quot; at the terminal to test them.</td>
+</tr>
+<tr><td>3</td>
+<td>&quot;redefine&quot; warning in orange</td>
+</tr>
+<tr><td>4</td>
+<td>Halts source file uploads on (or about) the first error, all errors in red and sound bell. Swdcom uploads are too fast to see!</td>
+</tr>
+<tr><td>5</td>
+<td>Simplified stack print.  &quot;.s Stack: [0 ] 42  ok.&quot;</td>
+</tr>
+<tr><td>6</td>
+<td>Swdcom instead of usart user terminal</td>
+</tr>
+<tr><td>7</td>
+<td>catchflashpointers.s/bl uart_init  transposition. Essential for swdcom to work properly.</td>
+</tr>
+<tr><td>8</td>
+<td>add 'carriage return' to 'newline' for Windows to prevent 'stair stepping'</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="peripheral-pretty-print-words">
+<h2>Peripheral Pretty Print Words</h2>
+<blockquote>
+RCC.
+GPIOA.
+GPIOB.
+GPIOC.
+EXTI.
+TIM2.
+I2C1.
+SPI1.
+ADC1.
+DBG.
+NVIC.</blockquote>
+<div class="section" id="sample">
+<h3>Sample</h3>
+<pre class="literal-block">
+EXTI.
+EXTI_IMR.  RW   $00000000
+3|3|2|2|2|2|2|2|2|2|2|2|1|1|1|1|1|1|1|1|1|1|
+1|0|9|8|7|6|5|4|3|2|1|0|9|8|7|6|5|4|3|2|1|0|9|8|7|6|5|4|3|2|1|0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+EXTI_EMR.  RW   $00000000
+3|3|2|2|2|2|2|2|2|2|2|2|1|1|1|1|1|1|1|1|1|1|
+1|0|9|8|7|6|5|4|3|2|1|0|9|8|7|6|5|4|3|2|1|0|9|8|7|6|5|4|3|2|1|0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+EXTI_RTSR.  RW   $00000000
+3|3|2|2|2|2|2|2|2|2|2|2|1|1|1|1|1|1|1|1|1|1|
+1|0|9|8|7|6|5|4|3|2|1|0|9|8|7|6|5|4|3|2|1|0|9|8|7|6|5|4|3|2|1|0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+EXTI_FTSR.  RW   $00000000
+3|3|2|2|2|2|2|2|2|2|2|2|1|1|1|1|1|1|1|1|1|1|
+1|0|9|8|7|6|5|4|3|2|1|0|9|8|7|6|5|4|3|2|1|0|9|8|7|6|5|4|3|2|1|0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+EXTI_SWIER.  RW   $00000000
+3|3|2|2|2|2|2|2|2|2|2|2|1|1|1|1|1|1|1|1|1|1|
+1|0|9|8|7|6|5|4|3|2|1|0|9|8|7|6|5|4|3|2|1|0|9|8|7|6|5|4|3|2|1|0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+EXTI_PR.  RW   $00000000
+3|3|2|2|2|2|2|2|2|2|2|2|1|1|1|1|1|1|1|1|1|1|
+1|0|9|8|7|6|5|4|3|2|1|0|9|8|7|6|5|4|3|2|1|0|9|8|7|6|5|4|3|2|1|0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+</pre>
+</div>
+<div class="section" id="dictionary">
+<h3>Dictionary</h3>
+<p>These are inbult user programs.</p>
+<p>i.e. '2+' is a program that adds 2. Forth uses RPN.</p>
+<pre class="literal-block">
+2 2+ . 4  ok.
+</pre>
+</div>
+</div>
+<div class="section" id="dissasembler">
+<h2>Dissasembler</h2>
+<pre class="literal-block">
+see 2+
+
+see 2+
+0000205A: 3602  adds r6 #2
+0000205C: 4770  bx lr
+Bytes: 4  ok.
+</pre>
+<div class="section" id="word-listing">
+<h3>Word Listing</h3>
+<pre class="literal-block">
+--- Mecrisp-Stellaris RA 2.5.5 ---
+2dup                2drop               2swap               2nip
+2over               2tuck               2rot                2-rot
+2&gt;r                 2r&gt;                 2r&#64;                 2rdrop
+d2/                 d2*                 dshr                dshl
+dabs                dnegate             d-                  d+
+s&gt;d                 um*                 m*                  ud*
+udm*                */                  */mod               u*/
+u*/mod              um/mod              m/mod               ud/mod
+d/mod               d/                  f*                  f/
+2!                  2&#64;                  du&lt;                 du&gt;
+d&lt;                  d&gt;                  d0&lt;                 d0=
+d&lt;&gt;                 d=                  sp&#64;                 sp!
+rp&#64;                 rp!                 dup                 drop
+?dup                swap                nip                 over
+tuck                rot                 -rot                pick
+depth               rdepth              &gt;r                  r&gt;
+r&#64;                  rdrop               rpick               roll
+-roll               and                 bic                 or
+xor                 *                   clz                 ror
+rol                 arshift             rshift              lshift
+0=                  0&lt;&gt;                 0&lt;                  true
+false               &gt;=                  &lt;=                  &lt;
+&gt;                   u&gt;=                 u&lt;=                 u&lt;
+u&gt;                  &lt;&gt;                  =                   min
+max                 umax                umin                move
+fill                &#64;                   !                   +!
+h&#64;                  h!                  h+!                 c&#64;
+c!                  c+!                 bis!                bic!
+xor!                bit&#64;                hbis!               hbic!
+hxor!               hbit&#64;               cbis!               cbic!
+cxor!               cbit&#64;               hflash!             flashpageerase
+eraseflash          eraseflashfrom      +                   -
+1-                  1+                  2-                  2+
+cell+               negate              not                 shr
+shl                 2*                  cells               2/
+abs                 u/mod               /mod                mod
+/                   even                base                binary
+decimal             hex                 swd                 swd-init
+swd-key?            swd-emit?           swd-key             swd-emit
+hook-emit           hook-key            hook-emit?          hook-key?
+hook-pause          emit                key                 emit?
+key?                pause               cexpect             accept
+tib                 &gt;in                 current-source      setsource
+source              query               compare             cr
+bl                  space               spaces              [char]
+char                (                   \                   .&quot;
+c&quot;                  s&quot;                  count               ctype
+type                hex.                h.s                 u.s
+.s                  words               unused              12bitencoding
+registerliteral,    movwmovt,           call,               literal,
+create              does&gt;               &lt;builds             [']
+'                   postpone            inline,             ret,
+exit                recurse             state               ]
+[                   :                   ;                   execute
+immediate           inline              compileonly         0-foldable
+1-foldable          2-foldable          3-foldable          4-foldable
+5-foldable          6-foldable          7-foldable          constant
+2constant           smudge              setflags            aligned
+align               h,                  ,                   &gt;&lt;,
+string,             allot               forgetram           compiletoram?
+compiletoram        compiletoflash      (create)            variable
+2variable           nvariable           buffer:             dictionarystart
+dictionarynext      skipstring          find                hook-find
+(find)              cjump,              jump,               here
+flashvar-here       then                else                if
+ahead               repeat              while               until
+again               begin               k                   j
+i                   leave               unloop              +loop
+loop                do                  ?do                 case
+?of                 of                  endof               endcase
+token               parse               digit               number
+.digit              hold                hold&lt;               sign
+#&gt;                  f#S                 f#                  #S
+#                   &lt;#                  f.                  f.n
+ud.                 d.                  u.                  .
+evaluate            interpret           hook-quit           quit
+eint?               eint                dint                ipsr
+nop                 unhandled           reset               irq-systick
+irq-fault           irq-collection      irq-rtc             irq-exti0
+irq-exti1           irq-exti2           irq-exti3           irq-exti4
+irq-adc             irq-exti5           irq-tim1brk         irq-tim1up
+irq-tim1trg         irq-tim1cc          irq-tim2            irq-tim3
+irq-tim4            irq-i2c1ev          irq-i2c1er          irq-i2c2ev
+irq-i2c2er          irq-spi1            irq-spi2            irq-usart1
+irq-usart2          irq-usart3          irq-exti10          irq-rtcalarm
+irq-usbwkup         irq-tim5            irq-spi3            irq-uart4
+irq-uart5           irq-tim6            irq-tim7            irq-usbfs
+--- Flash Dictionary ---
+72mhz               u.1                 u.2                 u.3
+u.4                 u.8                 h.1                 h.2
+h.3                 h.4                 h.8                 hex.1
+hex.2               hex.3               hex.4               u.ns
+const.              addr.               .decimal            bit
+b8loop.             b16loop.            b16loop-a.          b32loop.
+b32sloop.           bin.                bin1.               bin2.
+bin4.               bin4l.              bin4h.              bin16.
+WRITEONLY           RCC                 RCC_CR              RCC_CFGR
+RCC_CIR             RCC_APB2RSTR        RCC_APB1RSTR        RCC_AHBENR
+RCC_APB2ENR         RCC_APB1ENR         RCC_BDCR            RCC_CSR
+RCC_CR.             RCC_CFGR.           RCC_CIR.            RCC_APB2RSTR.
+RCC_APB1RSTR.       RCC_AHBENR.         RCC_APB2ENR.        RCC_APB1ENR.
+RCC_BDCR.           RCC_CSR.            RCC.                GPIOA
+GPIOA_CRL           GPIOA_CRH           GPIOA_IDR           GPIOA_ODR
+GPIOA_BSRR          GPIOA_BRR           GPIOA_LCKR          GPIOA_CRL.
+GPIOA_CRH.          GPIOA_IDR.          GPIOA_ODR.          GPIOA_BSRR.
+GPIOA_BRR.          GPIOA_LCKR.         GPIOA.              GPIOB
+GPIOB_CRL           GPIOB_CRH           GPIOB_IDR           GPIOB_ODR
+GPIOB_BSRR          GPIOB_BRR           GPIOB_LCKR          GPIOB_CRL.
+GPIOB_CRH.          GPIOB_IDR.          GPIOB_ODR.          GPIOB_BSRR.
+GPIOB_BRR.          GPIOB_LCKR.         GPIOB.              GPIOC
+GPIOC_CRL           GPIOC_CRH           GPIOC_IDR           GPIOC_ODR
+GPIOC_BSRR          GPIOC_BRR           GPIOC_LCKR          GPIOC_CRL.
+GPIOC_CRH.          GPIOC_IDR.          GPIOC_ODR.          GPIOC_BSRR.
+GPIOC_BRR.          GPIOC_LCKR.         GPIOC.              EXTI
+EXTI_IMR            EXTI_EMR            EXTI_RTSR           EXTI_FTSR
+EXTI_SWIER          EXTI_PR             EXTI_IMR.           EXTI_EMR.
+EXTI_RTSR.          EXTI_FTSR.          EXTI_SWIER.         EXTI_PR.
+EXTI.               TIM2                TIM2_CR1            TIM2_CR2
+TIM2_SMCR           TIM2_DIER           TIM2_SR             TIM2_EGR
+TIM2_CCMR1_Output   TIM2_CCMR1_Input    TIM2_CCMR2_Output   TIM2_CCMR2_Input
+TIM2_CCER           TIM2_CNT            TIM2_PSC            TIM2_ARR
+TIM2_CCR1           TIM2_CCR2           TIM2_CCR3           TIM2_CCR4
+TIM2_DCR            TIM2_DMAR           TIM2_CR1.           TIM2_CR2.
+TIM2_SMCR.          TIM2_DIER.          TIM2_SR.            TIM2_EGR.
+TIM2_CCMR1_Output.  TIM2_CCMR1_Input.   TIM2_CCMR2_Output.  TIM2_CCMR2_Input.
+TIM2_CCER.          TIM2_CNT.           TIM2_PSC.           TIM2_ARR.
+TIM2_CCR1.          TIM2_CCR2.          TIM2_CCR3.          TIM2_CCR4.
+TIM2_DCR.           TIM2_DMAR.          TIM2.               I2C1
+I2C1_CR1            I2C1_CR2            I2C1_OAR1           I2C1_OAR2
+I2C1_DR             I2C1_SR1            I2C1_SR2            I2C1_CCR
+I2C1_TRISE          I2C1_CR1.           I2C1_CR2.           I2C1_OAR1.
+I2C1_OAR2.          I2C1_DR.            I2C1_SR1.           I2C1_SR2.
+I2C1_CCR.           I2C1_TRISE.         I2C1.               SPI1
+SPI1_CR1            SPI1_CR2            SPI1_SR             SPI1_DR
+SPI1_CRCPR          SPI1_RXCRCR         SPI1_TXCRCR         SPI1_I2SCFGR
+SPI1_I2SPR          SPI1_CR1.           SPI1_CR2.           SPI1_SR.
+SPI1_DR.            SPI1_CRCPR.         SPI1_RXCRCR.        SPI1_TXCRCR.
+SPI1_I2SCFGR.       SPI1_I2SPR.         SPI1.               ADC1
+ADC1_SR             ADC1_CR1            ADC1_CR2            ADC1_SMPR1
+ADC1_SMPR2          ADC1_JOFR1          ADC1_JOFR2          ADC1_JOFR3
+ADC1_JOFR4          ADC1_HTR            ADC1_LTR            ADC1_SQR1
+ADC1_SQR2           ADC1_SQR3           ADC1_JSQR           ADC1_JDR1
+ADC1_JDR2           ADC1_JDR3           ADC1_JDR4           ADC1_DR
+ADC1_SR.            ADC1_CR1.           ADC1_CR2.           ADC1_SMPR1.
+ADC1_SMPR2.         ADC1_JOFR1.         ADC1_JOFR2.         ADC1_JOFR3.
+ADC1_JOFR4.         ADC1_HTR.           ADC1_LTR.           ADC1_SQR1.
+ADC1_SQR2.          ADC1_SQR3.          ADC1_JSQR.          ADC1_JDR1.
+ADC1_JDR2.          ADC1_JDR3.          ADC1_JDR4.          ADC1_DR.
+ADC1.               DBG                 DBG_IDCODE          DBG_CR
+DBG_IDCODE.         DBG_CR.             DBG.                NVIC
+NVIC_ICTR           NVIC_STIR           NVIC_ISER0          NVIC_ISER1
+NVIC_ICER0          NVIC_ICER1          NVIC_ISPR0          NVIC_ISPR1
+NVIC_ICPR0          NVIC_ICPR1          NVIC_IABR0          NVIC_IABR1
+NVIC_IPR0           NVIC_IPR1           NVIC_IPR2           NVIC_IPR3
+NVIC_IPR4           NVIC_IPR5           NVIC_IPR6           NVIC_IPR7
+NVIC_IPR8           NVIC_IPR9           NVIC_IPR10          NVIC_IPR11
+NVIC_IPR12          NVIC_IPR13          NVIC_IPR14          NVIC_ICTR.
+NVIC_STIR.          NVIC_ISER0.         NVIC_ISER1.         NVIC_ICER0.
+NVIC_ICER1.         NVIC_ISPR0.         NVIC_ISPR1.         NVIC_ICPR0.
+NVIC_ICPR1.         NVIC_IABR0.         NVIC_IABR1.         NVIC_IPR0.
+NVIC_IPR1.          NVIC_IPR2.          NVIC_IPR3.          NVIC_IPR4.
+NVIC_IPR5.          NVIC_IPR6.          NVIC_IPR7.          NVIC_IPR8.
+NVIC_IPR9.          NVIC_IPR10.         NVIC_IPR11.         NVIC_IPR12.
+NVIC_IPR13.         NVIC_IPR14.         NVIC.               input.analog
+output.pp           input.floating      output.od           input.pullx
+output.af.pp        output.af.od        gpio?               SCB_CPUID
+SCB_ICSR            SCB_VTOR            SCB_AIRCR           SCB_SCR
+SCB_CCR             SCB_SHPR1           SCB_SHPR2           SCB_SHPR3
+SCB_SHCSR           SCB_CFSR            SCB_HFSR            SCB_MMFAR
+SCB_BFAR            STK_CSR             STK_RVR             STK_CVR
+STK_CALIB           STK_CTRL            STK_LOAD            STK_VAL
+dump16              dump                words4              chipid
+hwid                c,collection        c,                  calign
+flash-kb            flash-pagesize      init-ring           c++&#64;
+ring-step           ring#               ring?               &gt;ring
+ring&gt;               usb:dev             usb:conf            usb:langid
+usb:vendor          usb:product         usb:line            usb:init
+USB                 USB_EP0R            USB_CNTR            USB_ISTR
+USB-FNR             USB_DADDR           USB_BTABLE          USBMEM
+usb-pma             usb-pma&#64;            usb-pma!            ep-addr
+ep-reg              rxstat!             txstat!             ep-reset-rx#
+rxclear             txclear             usb-pend            usb-serial
+set-serial          send-data           send-next           send-desc
+usb-reset           zero                usb-in-ring         usb-out-ring
+ep-setup            tx.pend             usb.ticks           usb-pma-c!
+usb-fill            ep-out              ep-in               usb-ctr
+usb-flush           usb-poll            usb-key?            usb-key
+usb-emit?           usb-emit            usb-io              init.usb
+deinit.usb          +usb                -usb                flashfree
+ramfree             flashfree.          ramfree.            memstats
+word.start          word.end            disasm-$            disasm-fetch
+disasm-string       name.               register.           opcode?
+reg.                reg16.              reg16split.         registerlist.
+imm3.               imm5.               imm8.               imm3&lt;&lt;1.
+imm5&lt;&lt;1.            imm8&lt;&lt;1.            imm3&lt;&lt;2.            imm5&lt;&lt;2.
+imm7&lt;&lt;2.            imm8&lt;&lt;2.            condition.          rotateleft
+rotateright         imm12.              destination-r0      disasm-thumb-2
+disasm              memstamp            disasm-step         seec
+see                 free                ticktime            tickint
+systick-handler     init.systick        ticktime.           zero-ticktime
+ms.delay            cornerstone         --utils--           calltrace-handler
+init.calltrace      RCC_APB2ENR_IOPAEN  RCC_APB2ENR_IOPBEN  RCC_APB2ENR_IOPCEN
+JUMPER-ON?          GPIOA_CRL_MODE0&lt;&lt;   GPIOC_CRH_MODE13&lt;&lt;  GPIOC_BSRR_BS13
+GPIOC_BSRR_BR13     GPIOB_CRH_MODE9     GPIOB_CRH_CNF9      GPIOB_BSRR_BS9
+GPIOB_BSRR_BR9      PB9-LOW             PB9-HIGH            GPIOA_CRH_MODE12
+GPIOA_CRH_CNF12     GPIOA_BSRR_BS12     GPIOA_BSRR_BR12     PA12-HIGH
+PA12-LOW            blink               pa12-init           pa12-disable
+pa12-pulse          pb9-init            pb9-disable         pb9-pulse
+usddp-init          usbdp-pulse         usbdp-disable       2nd64kb-verified-flag
+test-flag           pass-flag           flash=65536-declared-flag
+qty-flash-declared? 2nd64kb-verified-flag-test
+FF?                 AA?                 55?                 fillAA
+fill55              erase               2nd64kb?            hidden64kB?
+cause-exception     wait                flash-declared?     print-flash-declared
+DBGMCU_IDCODE-UNREADABLE-FLAG
+3addr               duid                serial              is-ascii?
+ascii.              id                  scb_cpuid-bits31-0  scb_cpuid-bits31:24
+scb_cpuid-bits23:20 scb_cpuid-bits19:16 scb_cpuid-bits15:4  scb_cpuid-bits3:0
+scb-cpuid           uuid                print-dbgmcu_idcode dbgmcu_idcode?
+test-status?        F103C8T6-Auth?      0dump               1dump
+fflag-fail!         fflag-pass!         ex3                 flash-$55&#64;$1FFF0
+read-&#64;$1FFF0        credits             license             faq
+usb-faq             fallthru            extra-menu-print    menu-a
+menu-print          extra-menu          menu                m
+version-major       version-minor       version?            option-jumper?
+init
+</pre>
+</div>
+</div>
+<div class="section" id="id1">
+<h2>Forth User Notes</h2>
+<ul class="simple">
+<li>A PC-13 blinky, 'blink' has been included.</li>
+</ul>
+<pre class="literal-block">
+: GPIOC_CRH_MODE13&lt;&lt; ( %bbbb -- x ) 20 lshift ;   \ GPIOC-13 mode
+: GPIOC_BSRR_BS13 ( -- ) 13 bit GPIOC_BSRR ! ;    \ Set bit 13
+: GPIOC_BSRR_BR13 ( -- ) 29 bit GPIOC_BSRR ! ;    \ Reset bit 13
+
+: blink ( -- pc13 )
+  $F GPIOC_CRH_MODE13&lt;&lt; GPIOC_CRH bic!            \ clear all bits
+  output.od GPIOC_CRH_MODE13&lt;&lt; GPIOC_CRH bis!     \ set PC13 to open drain
+  begin
+       GPIOC_BSRR_BR13 \ PC13 led on
+       1000 ms.delay   \ accurate  1 millisecond blocking delay
+       GPIOC_BSRR_BS13 \ PC13 led off
+       1000 ms.delay
+  key? until           \ keep blinking until a keyboard key is pressed
+;
+</pre>
+<ul class="simple">
+<li>'free' shows the flash and ram status. Flash status assumes a 128kb flash chip (including the STM32F103C8 hidden 64KB)</li>
+<li>To remove all of the BluePill Diags V1.6 code to free up flash space enter the following:</li>
+</ul>
+<pre class="literal-block">
+--utils--
+</pre>
+<p>This will not affect the USB terminal or developer utils etc.You can replace it by reflashing bluepill-diagnostics-v1.6.bin</p>
+</div>
+</div>
+</div>
+</body>
+</html>
